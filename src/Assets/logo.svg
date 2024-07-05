@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="105px" viewBox="0 0 116 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-37.5%" y="-42.9%" width="175.0%" height="185.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.133333333   0 0 0 0 0.219607843  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0.5611 14.6599 0.5611 14.6599 13.3931 0 13.3931"></polygon>
+        <polygon id="path-4" points="0.2164 0.5614 15.3314 0.5614 15.3314 15 0.2164 15"></polygon>
+    </defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-61.000000, -2532.000000)">
+            <g id="Group-15" filter="url(#filter-1)" transform="translate(80.000000, 2548.000000)">
+                <g id="Group-3" transform="translate(0.000000, 55.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M7.3299,11.2181 C4.6429,11.2181 2.7239,9.4451 2.7239,6.9771 C2.7239,4.5101 4.6429,2.7371 7.3299,2.7371 C10.0349,2.7371 11.9549,4.5101 11.9549,6.9771 C11.9549,9.4451 10.0349,11.2181 7.3299,11.2181 M7.3299,0.5611 C2.8879,0.5611 -0.0001,3.3211 -0.0001,6.9771 C-0.0001,10.6331 2.8879,13.3931 7.3299,13.3931 C11.7899,13.3931 14.6599,10.6331 14.6599,6.9771 C14.6599,3.3581 11.7899,0.5611 7.3299,0.5611" id="Fill-1" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                </g>
+                <path d="M25.055,61.6118 L25.055,57.9738 L29.552,57.9738 C31.507,57.9738 32.33,58.6138 32.33,59.7838 C32.33,61.0268 31.233,61.6118 29.332,61.6118 L25.055,61.6118 Z M35.035,59.7288 C35.035,57.3348 33.335,55.8908 30.045,55.8908 L22.368,55.8908 L22.368,68.0638 L25.055,68.0638 L25.055,63.6228 L28.747,63.6228 L32.549,68.0638 L35.657,68.0638 L31.617,63.4398 C33.664,63.0008 35.035,61.7028 35.035,59.7288 Z" id="Fill-4" fill="#FFFFFF"></path>
+                <g id="Group-8" transform="translate(42.000000, 55.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <g id="Clip-7"></g>
+                    <path d="M2.9404,6.9774 C2.9404,4.5094 4.8594,2.7364 7.5464,2.7364 C10.2524,2.7364 12.1714,4.5094 12.1714,6.9774 C12.1714,9.4454 10.2524,11.2184 7.5464,11.2184 C4.8594,11.2184 2.9404,9.4454 2.9404,6.9774 M14.8764,6.9774 C14.8764,3.3584 12.0074,0.5614 7.5464,0.5614 C3.1054,0.5614 0.2164,3.3214 0.2164,6.9774 C0.2164,10.6334 3.1054,13.3934 7.5464,13.3934 C8.4574,13.3934 9.2994,13.2764 10.0664,13.0624 L12.0044,15.0004 L15.3314,15.0004 L12.3304,11.9994 C13.9494,10.8424 14.8764,9.0554 14.8764,6.9774" id="Fill-6" fill="#FFFFFF" mask="url(#mask-5)"></path>
+                </g>
+                <path d="M68.6246,63.6956 L71.2936,58.3766 L71.3296,58.3766 L73.9986,63.6956 L68.6246,63.6956 Z M72.8106,55.7986 L69.9046,55.7986 L63.6166,68.0646 L66.4126,68.0646 L67.6556,65.5966 L74.9676,65.5966 L76.2106,68.0646 L79.1166,68.0646 L72.8106,55.7986 Z" id="Fill-9" fill="#FFFFFF"></path>
+                <polygon id="Fill-11" fill="#FF2238" points="39.0916 0 65.3816 32.1 60.5146 37.865 46.6646 37.865 39.0916 30.906"></polygon>
+                <polygon id="Fill-13" fill="#FF2238" points="36.9104 30.9058 29.3374 37.8648 17.3984 37.8648 13.7354 34.0598 30.4534 15.2918 36.9104 14.5008"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

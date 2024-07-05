@@ -1,0 +1,22 @@
+.p-organizationchart-lines[style='visibility: inherit;'] {
+    .p-organizationchart-line-top {
+        border-top: 1px solid #383838;
+    }
+    .p-organizationchart-line-left {
+        border-right: 1px solid #383838;
+    }
+}
+
+.p-organizationchart-node-content {
+    border-radius: 20px;
+}
+
+.p-node-toggler i {
+    display: flex;
+    justify-content: center;
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+    
