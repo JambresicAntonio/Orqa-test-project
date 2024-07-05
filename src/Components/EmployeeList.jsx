@@ -29,6 +29,8 @@ const EmployeeList = () => {
     const [selectedEmployee, setSelectedEmployee] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
 
+    const localURL = 'http://localhost:8000';
+
     const getEmployeeDetails = (id) => {
         const clickedEmployee = employees.find(employee => employee.id === id);
         setSelectedEmployee(clickedEmployee);
@@ -40,7 +42,7 @@ const EmployeeList = () => {
     };
 
     useEffect(() => {
-        fetchMoreEmployees();
+        fetchMoreEmployees(localURL);
     }, [fetchMoreEmployees]);
 
     useEffect(() => {
@@ -66,7 +68,7 @@ const EmployeeList = () => {
 
         if (term) {
             try {
-                const response = await axios.get(`http://localhost:8000/api/employees?search=${term}`);
+                const response = await axios.get(`${localURL}/api/employees?search=${term}`);
                 setHookPage(1);
                 setEmployees(response.data.data); 
             } catch (error) {
@@ -75,7 +77,7 @@ const EmployeeList = () => {
         } else {
             setEmployees([]);
             setHookPage(1);
-            fetchMoreEmployees();
+            fetchMoreEmployees(localURL);
         }
     };
 

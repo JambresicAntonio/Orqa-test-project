@@ -7,9 +7,7 @@ const getMoreEmployees = (initialPage) => {
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(initialPage);
 
-  const localURL = 'http://localhost:8000';
-
-  const fetchMoreEmployees = useCallback(async () => {
+  const fetchMoreEmployees = useCallback(async (localURL) => {
     setIsLoading(true);
     try {
       const response = await axios.get(`${localURL}/api/employees?page=${page}`);
