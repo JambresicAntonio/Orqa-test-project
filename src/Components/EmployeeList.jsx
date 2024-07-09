@@ -7,9 +7,6 @@ import '../Styles/ShinyInput.scss';
 
 import axios from 'axios';
 import { motion } from 'framer-motion';
-
-import { Image, IconButton, useDisclosure, Input } from '@chakra-ui/react';
-
 import {
     Table,
     Thead,
@@ -18,9 +15,14 @@ import {
     Th,
     Td,
     TableContainer,
+    Image,
+    IconButton,
+    useDisclosure,
+    Input,
   } from '@chakra-ui/react'
 
 import { InfoOutlineIcon } from '@chakra-ui/icons'
+import { useDebounce } from 'use-debounce';
 
 const EmployeeList = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -28,6 +30,8 @@ const EmployeeList = () => {
     const { employees, isLoading, fetchMoreEmployees, setPage: setHookPage, setEmployees } = getMoreEmployees(page);
     const [selectedEmployee, setSelectedEmployee] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
+    const [debounceSearch] = useDebounce(searchTerm, 500);
+    console.log('deboiunce: ', debounceSearch);
 
     const localURL = 'http://localhost:8000';
 
@@ -42,8 +46,8 @@ const EmployeeList = () => {
     };
 
     useEffect(() => {
-        fetchMoreEmployees(localURL);
-    }, [fetchMoreEmployees]);
+        fetchEmployees();
+    }, [debounceSearch]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -62,13 +66,13 @@ const EmployeeList = () => {
           
     }, [isLoading, fetchMoreEmployees]); 
 
-    const fetchEmployees = async (term) => {
+    const fetchEmployees = async () => {
         setEmployees([]);
-        setSearchTerm(term);
+        setSearchTerm(debounceSearch);
 
-        if (term) {
+        if (debounceSearch) {
             try {
-                const response = await axios.get(`${localURL}/api/employees?search=${term}`);
+                const response = await axios.get(`${localURL}/api/employees?search=${debounceSearch}`);
                 setHookPage(1);
                 setEmployees(response.data.data); 
             } catch (error) {
@@ -89,7 +93,7 @@ const EmployeeList = () => {
                 type='text'
                 placeholder='Search employees'
                 value={searchTerm}
-                onChange={(e) => fetchEmployees(e.target.value)}
+                onChange={(e) => setSearchTerm(e.target.value)}
                 mb={10}
                 h='60px'
             />
